@@ -1,4 +1,4 @@
-/*
+﻿df/*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
 
@@ -2704,12 +2704,19 @@ html {
     height: max-content;
 }
 
+.imagesmall {
+    /*thu nhỏ */
+    width: 20%;
+    height: 60%;
+    
+}
+
 .h-64 {
     height: 16rem;
 }
 
 .h-1\/2 {
-    height: 50%;
+    height: 48.5%;
 }
 
 .h-20 {
@@ -2769,7 +2776,7 @@ html {
 }
 
 .min-w-\[853\.333px\] {
-    min-width: 853.333px;
+    min-width: 820.333px;
 }
 
 .max-w-screen-xl {
@@ -2949,14 +2956,22 @@ html {
 
 
 .bg-grey12 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(230 60 17 / var(--tw-bg-opacity));
+    
+    background-color: #f1f1f1;
 }
 
 .bg-\[\#fb5533\] {
     --tw-bg-opacity: 1;
     background-color: rgb(251 85 51 / var(--tw-bg-opacity));
 }
+
+
+.bg-\[\#f00000\] {
+    --tw-bg-opacity: 1;
+    background-color: #FFFFFF;
+}
+
+
 
 .bg-gray-700\/60 {
     background-color: rgb(55 65 81 / 0.6);
@@ -2972,18 +2987,22 @@ html {
 }
 
 .from-\[\#f63f2d\] {
-    --tw-gradient-from: #f63f2d;
-    --tw-gradient-to: rgb(246 63 45 / 0);
+    --tw-gradient-from: #ffd400;
+    --tw-gradient-to: rgb(255, 212, 0 / 0);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+.to-\[\#fe6333\] {
+    --tw-gradient-to: #ffd400;
+}
+
+
+
 
 .indent69 {
     padding-left: 1.7em
 }
 
-.to-\[\#fe6333\] {
-    --tw-gradient-to: #fe6333;
-}
+
 
 .fill-current {
     fill: currentColor;
@@ -3057,8 +3076,8 @@ html {
 }
 
 .pa-69 {
-    padding-left: 8.5rem;
-    padding-right: 8.5rem;
+    padding-left: 20.5rem;
+    padding-right: 1.5rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -3102,6 +3121,7 @@ html {
     line-height: 1.75rem;
 }
 
+
 .text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -3132,18 +3152,35 @@ html {
 }
 
 .titletg {
-     display: block; 
+    display: block; 
     overflow: hidden; 
     padding: 15px 22px; 
-     font-size: 22px; 
-     line-height: 36px; 
-   color: #333; 
+    font-size: 22px; 
+    line-height: 36px; 
+    color: #333; 
     text-transform: uppercase; 
 }
 
 
+.titletg1 {
+    display: block;
+    overflow: hidden;
+    padding: 0px 10px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.text69 {
+	font-size: 100px; 
+    line-height: 36px;
+}
+
+
 .boldgod69 {
-	font-weight: bold;
+    font-weight: bold;
+    
 }
 
  .vote-txt {
@@ -3195,6 +3232,7 @@ html {
 .text-\[\#120e0c\] {
     --tw-text-opacity: 1;
     color: rgb(18 14 12 / var(--tw-text-opacity));
+   
 }
 
 
@@ -3402,7 +3440,7 @@ html {
 
 .hover\:text-\[\#fbc797\]:hover {
     --tw-text-opacity: 1;
-    color: rgb(251 199 151 / var(--tw-text-opacity));
+    color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-90:hover {
