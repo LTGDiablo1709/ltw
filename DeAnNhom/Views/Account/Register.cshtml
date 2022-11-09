@@ -1,40 +1,59 @@
-﻿@{
+﻿@model DeAnNhom.Models.User
+
+
+@{
     ViewBag.Title = "Đăng ký";
     Layout = "~/Views/Shared/Layout/_AccountLayout.cshtml";
 }
 
-<section class="flex flex-col gap-7">
-    <input id="phone-input"
-           type="text"
-           autocomplete="tel"
-           class="w-full rounded-md border border-gray-400/60 py-2 px-4 placeholder:text-sm placeholder:text-gray-600 focus:outline-none"
-           placeholder="Phone number" />
+<div class="row justify-content-md-center">
+    <div class="col-md-5">
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+        {
+            //@Html.ValidationSummary()
+            @Html.AntiForgeryToken()
 
-    <button type="submit"
-            class="w-full rounded-md bg-[#ee4d2d] py-2 text-white disabled:cursor-not-allowed disabled:bg-[#f4836c]"
-            disabled>
-        Tiếp theo
-    </button>
-</section>
+            <div class="card">
+                <div class="card-header">
+                    
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.FirstName)
+                        @Html.TextBoxFor(m => m.FirstName, "", new { @class = "form-control", @placeholder = "First Name" })
+                        @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "badge badge-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.LastName)
+                        @Html.TextBoxFor(m => m.LastName, "", new { @class = "form-control", @placeholder = "Last Name" })
+                        @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "badge badge-danger" })
 
-<section class="flex items-center gap-5 text-xs text-gray-500/60">
-    <div class="w-full border-t-[1px] border-gray-500 opacity-40"></div>
-    <span>HOẶC</span>
-    <div class="w-full border-t-[1px] border-gray-500 opacity-40"></div>
-</section>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Email)
+                        @Html.TextBoxFor(m => m.Email, "", new { @class = "form-control", @placeholder = "Email" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "badge badge-danger" })
+                        @if (ViewBag.error != null)
+                        {
+                            <span class="badge badge-danger">@ViewBag.error</span>
+                        }
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "badge badge-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.ConfirmPassword)
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @placeholder = "Confim Password" })
+                        @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "badge badge-danger" })
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-danger" value="Register" />
+                    </div>
+                </div>
+            </div>
 
-<section class="flex items-center gap-5 text-sm">
-    <button type="button" class="w-full border border-gray-500 border-opacity-40 py-2">Facebook</button>
-    <button type="button" class="w-full border border-gray-500 border-opacity-40 py-2">Google</button>
-</section>
-
-<section class="text-center text-sm">
-    Bằng việc đăng kí, bạn đã đồng ý với Shopee về <br />
-    <a class="text-[#ee4d2d]" href="#">Điều khoản dịch vụ</a>
-    &
-    <a class="text-[#ee4d2d]" href="#">Chính sách bảo mật</a>
-</section>
-
-<section class="text-center text-sm text-gray-400/60">
-    Bạn đã có tài khoản? @Html.ActionLink("Đăng nhập", "Login", "Account", null, new { @class = "text-[#ee4d2d]" })
-</section>
+        }
+    </div>
+</div>

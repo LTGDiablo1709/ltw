@@ -2982,6 +2982,11 @@ html {
     background-color: rgb(238 77 45 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#919180\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(145 145 128 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
     background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -3247,6 +3252,13 @@ html {
     --tw-text-opacity: 1;
     color: rgb(238 77 45 / var(--tw-text-opacity));
 }
+
+
+.text-\[\#030303\] {
+    --tw-text-opacity: 1;
+    color: rgb(3 3 3 / var(--tw-text-opacity));
+}
+
 
 .text-gray-400\/60 {
     color: rgb(156 163 175 / 0.6);

@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Trang chủ";
 }
 
 <section id="ads-board" class="bg-white">
@@ -10,8 +10,8 @@
                     <li><img class="h-64" src="https://cdn.tgdd.vn/2022/11/banner/720-220-720x220-45.png" /></li>
                     <li><img class="h-64" src="https://cdn.tgdd.vn/2022/11/banner/720-220-720x220-72.png" /></li>
                     <li><img class="h-64" src="https://cdn.tgdd.vn/2022/10/banner/720-220-720x220-250.png" /></li>
-                  
-                    
+
+
                 </ul>
 
                 <div class="z-10 flex h-full w-full items-center justify-between">
@@ -67,6 +67,34 @@
         <button class="w-96 bg-white py-2 text-center shadow-md">Xem thêm</button>
     </div>
 </section>
+
+
+<div class="row justify-content-md-start">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Wellcome
+            </div>
+            <div class="card-body">
+                @if (Session["FullName"] != null)
+                {
+                    <p>Name: @Session["FullName"].ToString()</p>
+                    <p>Email: @Session["Email"].ToString()</p>
+                    <a href="@Url.Action("Logout","Account")" class="btn btn-warning">Logout</a>
+                }
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
 @section script
 {
