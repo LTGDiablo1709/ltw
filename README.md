@@ -1,6 +1,6 @@
 # 69
 
-Practice repo only, vui lòng ghi source và Discord của owner repo nếu muốn dùng code tham khảo
+Practice repo only
 
 Process complete: ~5%
 
