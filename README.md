@@ -7,6 +7,8 @@ Process complete: ~5%
 Todo list 
 
 ━━━━━━━━━━━━━━━━━
+CLONE VỀ THÌ XÓA MẤY FILE CÓ KHAI BÁO DB, TẠO LẠI DB (PHẢI LIÊN KẾT VỚI MODEL) XONG SAU ĐÓ MỚI KIỂM TRA CONNECTION STRING
+
 
 Liên quan đến database (DATABASE chỉ LƯU LOCAL / MÁY nên là nên chọn 1 máy và 1 máy dự phòng)
 
