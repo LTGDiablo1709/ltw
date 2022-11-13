@@ -6,28 +6,30 @@ Process complete: ~5%
 
 Todo list 
 
----
+━━━━━━━━━━━━━━━━━
 
-Sửa connection string 
-
-Add Default string 
-
-Add Mirigation string 
+Liên quan đến database (DATABASE chỉ LƯU LOCAL / MÁY nên là nên chọn 1 máy và 1 máy dự phòng)
 
 
-Sửa db không lưu đk đn
+Sửa connection string (bắt buộc)
+LƯU Ý QUAN TRỌNG: CONNECTION STRING NHƯ NÀO ĐI CHĂNG NỮA THÌ PHẢI KHAI BÁO ĐÚNG TÊN MÁY MÌNH
 
---- 
+Add Default string (optional)
+
+Add Mirigation string (optional)
+
+Sửa db không lưu đk đn (tui khai báo sai tên DB ở 20 chỗ nên nó không lưu được, có gì phải sửa lại hết)
+
+━━━━━━━━━━━━━━━━━
 
 Tạo sản phẩm ảo (bằng tay)
 
 
-Đánh dấu số product từ 1 đến 8 
+Đánh dấu số product từ 1 đến 8 (nếu nhắm làm được thì dùng database để tạo trực tiếp)
 
 Tạo database add các sp theo mã đễ details hoạt động trơn tru và đúng
 
-
----
+━━━━━━━━━━━━━━━━━
 
 Hoàn thiện web và nâng cao (nếu còn giờ)
 
